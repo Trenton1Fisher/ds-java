@@ -14,7 +14,7 @@ public class Stack {
             System.out.println("Stack Overflow");
             return;
         }
-        this.data[this.top++] = value;
+        this.data[++this.top] = value;
     }
 
     public int pop(){

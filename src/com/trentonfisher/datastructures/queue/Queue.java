@@ -8,8 +8,8 @@ public class Queue {
     final int CAPACITY = 50;
 
     public Queue(){
-        this.rear = 0;
-        this.front = -1;
+        this.rear = -1;
+        this.front = 0;
         this.data = new int[50];
     }
 
