@@ -4,6 +4,7 @@ import com.trentonfisher.datastructures.stack.Stack;
 import com.trentonfisher.datastructures.linkedlist.LinkedList;
 import com.trentonfisher.datastructures.queue.Queue;
 import com.trentonfisher.datastructures.dynamicarray.DynamicArray;
+import com.trentonfisher.datastructures.binarytree.BinaryTree;
 
 class main {
     public static void main(String[] args) {
@@ -13,6 +14,8 @@ class main {
         LinkedList list = new LinkedList(14);
         Queue queue = new Queue();
         DynamicArray dynarray = new DynamicArray();
+        BinaryTree binTree = new BinaryTree();
+
 
         //STACK
         System.out.println("=====================");
@@ -79,6 +82,17 @@ class main {
             list.add(value);
         }
         list.printList();
+
+        //BINARY TREE
+        System.out.println("=====================");
+        System.out.println("... Loading Binary Tree ...");
+        System.out.println("=====================");
+        System.out.println("");
+        for(int value: numberTest){
+            binTree.addNode(value);
+        }
+
+        binTree.printPre();
 
 
 
